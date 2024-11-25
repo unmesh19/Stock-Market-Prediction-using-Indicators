@@ -1,48 +1,130 @@
 # Stock Market Indicators and Their Formulas
 
-This document explains the commonly used technical indicators in stock market analysis. These indicators help traders and investors make informed decisions by interpreting the stock price movements and market trends.
+This document provides an overview of key technical indicators used in stock market analysis. These indicators help traders and investors interpret stock price movements and market trends effectively.
 
-## Key Indicators Explained:
+---
+
+## **Key Indicators**
 
 ### 1. **Simple Moving Average (SMA)**
 - **Formula**:  
-  \[
-  \text{SMA} = \frac{P_1 + P_2 + \dots + P_n}{n}
-  \]
-  Where \( P_1, P_2, \dots, P_n \) are the closing prices over a specified period (e.g., 50 days, 200 days).
+
+  SMA = (P_1 + P_2 + . . . + P_n)/n
+  
+  Where:  
+  P_1, P_2,..., P_n are the closing prices over n periods.
+
 - **Explanation**:  
-  The SMA is the average of the stock’s closing prices over a specific period. It smooths out the data to identify the direction of the trend.
+  The SMA calculates the average of closing prices over a specific time period, helping smooth out price data to reveal the underlying trend.
+
+---
 
 ### 2. **Exponential Moving Average (EMA)**
 - **Formula**:  
-  \[
-  \text{EMA} = \text{(Today's Price} \times \text{(Multiplier)}) + \text{(Yesterday's EMA} \times (1 - \text{Multiplier}))
-  \]
-  Where the **Multiplier** is:
-  \[
-  \text{Multiplier} = \frac{2}{n + 1}
-  \]
-  and \( n \) is the number of days in the time period (e.g., 12 or 26 days).
+
+  \text{EMA} = ((Today's Price) x Multiplier) + ((Yesterday's EMA) x (1 - Multiplier))
+ 
+  Where:  
+  - **Multiplier**:  
+    
+    Multiplier = 2/(n + 1)
+  
+    n is the number of periods.
+
 - **Explanation**:  
-  EMA gives more weight to the latest prices and reacts more quickly to price changes than the SMA.
+  EMA assigns more weight to recent prices, making it more responsive to price changes than SMA.
+
+---
 
 ### 3. **Moving Average Convergence Divergence (MACD)**
 - **Formula**:  
-  \[
-  \text{MACD} = \text{EMA(12)} - \text{EMA(26)}
-  \]
+
+  MACD = EMA(Short Period) - EMA(Long Period)
+   
+
 - **Explanation**:  
-  MACD shows the relationship between two EMAs (12-day and 26-day). It helps traders spot changes in the strength, direction, momentum, and duration of a trend.
+  MACD reveals the relationship between two EMAs, helping traders identify trend direction and momentum. A signal line (EMA of MACD values) is often used to generate buy or sell signals.
+
+---
 
 ### 4. **Relative Strength Index (RSI)**
 - **Formula**:  
-  \[
-  \text{RSI} = 100 - \frac{100}{1 + RS}
-  \]
-  Where \( RS \) (Relative Strength) is:
-  \[
-  RS = \frac{\text{Average Gain over n periods}}{\text{Average Loss over n periods}}
-  \]
-  and \( n \) is typically 14 days.
+  
+  RSI = 100 - 100/(1 + RS)
+    
+  Where:  
+  
+  RS = (Average Gain over n periods)/(Average Loss over n periods)
+    
+  n is typically 14 periods.
+
 - **Explanation**:  
-  RSI measures the speed and change of price movements. It indicates whether a stock is overbought (>70) or oversold (<30).
+  RSI measures the speed and magnitude of price movements, indicating overbought (RSI > 70) or oversold (RSI < 30) conditions.
+
+---
+
+### 5. **Bollinger Bands**
+- **Formula**:  
+  - **Middle Band**: SMA of closing prices (e.g., 20-period SMA).  
+  - **Upper Band**:  
+
+  - Upper Band = Middle Band + (2 x Standard Deviation)
+
+  - **Lower Band**:  
+
+  - Lower Band = Middle Band - (2 x Standard Deviation)
+
+- **Explanation**:  
+  Bollinger Bands help identify price volatility. When prices approach the upper band, the asset may be overbought; near the lower band, it may be oversold.
+
+---
+
+### 6. **On-Balance Volume (OBV)**
+- **Formula**:
+- 
+- OBV = Cumulative (Sign of Price Change x Volume)
+
+- **Explanation**:  
+  OBV measures the buying and selling pressure by analyzing volume flow relative to price changes.
+
+---
+
+### 7. **Parabolic SAR (PSAR)**
+- **Formula**:  
+  PSAR is calculated iteratively using:
+  - **Acceleration Factor (AF)**: Starts at 0.02 and increases incrementally by 0.02, up to a maximum (e.g., 0.2).  
+  - The formula adjusts based on the highest highs and lowest lows during the trend.
+
+- **Explanation**:  
+  PSAR is a trend-following indicator used to identify potential reversals. It provides stop-loss levels during trending markets.
+
+---
+
+## **Additional Indicators**
+
+### 8. **Short-Term RSI**
+- **Formula**:  
+  Same as the standard RSI formula but calculated over a shorter period, such as 9 periods.
+
+- **Explanation**:  
+  A short-term RSI provides a quicker response to price changes, making it suitable for shorter trading timeframes.
+
+---
+
+### 9. **Bollinger Band Width**
+- **Formula**:
+-
+- Width = Upper Band - Lower Band
+
+
+- **Explanation**:  
+  The Bollinger Band Width indicates market volatility. A wider band suggests higher volatility, while a narrower band suggests lower volatility.
+
+---
+
+### 10. **MACD Signal Line**
+- **Formula**:  
+  The Signal Line is the EMA of the MACD values, typically over 9 periods.
+
+- **Explanation**:  
+  The Signal Line helps smooth the MACD values, making crossover signals easier to identify.
