@@ -100,8 +100,6 @@ This document provides an overview of key technical indicators used in stock mar
 
 ---
 
-## **Additional Indicators**
-
 ### 8. **Short-Term RSI**
 - **Formula**:  
   Same as the standard RSI formula but calculated over a shorter period, such as 9 periods.
